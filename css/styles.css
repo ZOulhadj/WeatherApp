@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgb(45, 20, 180), rgb(160, 10, 200)) no-repeat;
+    color: white;
+
+    height: 100vh;
+    width: 100%;
+
+}
+
+.app-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.app-title {
+    height: 10vh;
+}
+
+.location-section {
+    display: flex;
+}
+
+.location-section h2 {
+    align-self: flex-start;
+    width: 150px;
+}
+
+.location-section h3 {
+    align-self: center;
+}
+
+.temperature-section {
+    display: flex;
+}
+
+.temperature-section h2 {
+    align-self: flex-start;
+    width: 200px;
+}
+
+.temperature-section .temperature {
+    display: flex;
+    align-self: center;
+}
+
+/* .temperature-section .temperature h2 {
+    align-self: flex-start;
+    width: 150px;
+} */
+
+.temperature:hover {
+    cursor: pointer;
+}
