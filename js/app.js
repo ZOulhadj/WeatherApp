@@ -24,7 +24,6 @@ window.addEventListener("load", ()=> {
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data);
                     const {temperature} = data.currently;
 
                     // Set DOM element data based on API data
