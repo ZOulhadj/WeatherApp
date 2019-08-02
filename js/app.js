@@ -1,3 +1,12 @@
+// Functions to convert temperature to celcius or fahrenheit
+function ToCelcius(temperature) {
+    return ((temperature - 32) * 5 / 9).toFixed(2);
+}
+
+function ToFahrenheit(temperature) {
+    return ((temperature * 9 / 5) + 32).toFixed(2);
+}
+
 window.addEventListener("load", ()=> {
     let longitude, latitude;
 
@@ -47,12 +56,3 @@ window.addEventListener("load", ()=> {
         console.log('Geolocation is not enabled. Please enable to use WeatherApp');
     }
 });
-
-// Functions to convert temperature to celcius or fahrenheit
-function ToCelcius(temperature) {
-    return ((temperature - 32) * 5 / 9).toFixed(2);
-}
-
-function ToFahrenheit(temperature) {
-    return ((temperature * 9 / 5) + 32).toFixed(2);
-}
