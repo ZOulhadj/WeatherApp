@@ -1,9 +1,9 @@
-// Functions to convert temperature to celcius or fahrenheit
-function ToCelcius(temperature) {
+// Functions that convert temperature to celcius or fahrenheit
+function toCelcius(temperature) {
     return ((temperature - 32) * 5 / 9).toFixed(2);
 }
 
-function ToFahrenheit(temperature) {
+function toFahrenheit(temperature) {
     return ((temperature * 9 / 5) + 32).toFixed(2);
 }
 
@@ -37,15 +37,15 @@ window.addEventListener("load", ()=> {
 
                     // Set DOM element data based on API data
                     locationElement.textContent = data.timezone;
-                    temperatureValueElement.textContent = ToCelcius(temperature);
+                    temperatureValueElement.textContent = toCelcius(temperature);
 
                     // When the temperature is clicked, switch between celcius and fahrenheit.
                     temperatureElement.addEventListener('click', () => {
                         if (degreesElement.textContent === 'C') {
-                            temperatureValueElement.textContent = ToFahrenheit(temperatureValueElement.textContent);
+                            temperatureValueElement.textContent = toFahrenheit(temperatureValueElement.textContent);
                             degreesElement.textContent = 'F';
                         } else {
-                            temperatureValueElement.textContent = ToCelcius(temperatureValueElement.textContent);
+                            temperatureValueElement.textContent = toCelcius(temperatureValueElement.textContent);
                             degreesElement.textContent = 'C';
                         }
                     });
