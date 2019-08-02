@@ -14,7 +14,7 @@ window.addEventListener("load", ()=> {
 
             /*
              * Proxy used to automatically include cross-origin headers needed
-             * to access the DarkSky API.
+             * to access the DarkSky API via localhost.
              */
             const proxy = 'https://cors-anywhere.herokuapp.com/';
             const api = `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${latitude},${longitude}`;

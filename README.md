@@ -4,4 +4,4 @@ A basic Javascript weather application which gathers temperature data based on y
 
 ## Preview
 
-![](demo.gif)
+![](assets/demo.gif)
